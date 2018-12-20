@@ -22,12 +22,12 @@ const pasus4 = document.getElementById("pasus4")*/
 
 function pitanje1(){
   if(odg1.value.toLowerCase().trim() == "kanbera"){
-    pasus1.innerHTML = "To je tacno &#10004;";
+    pasus1.innerHTML = "To je tačno &#10004;";
     poeni ++;
    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus1.innerHTML = "Netacno &#10006; - Tacan odgovor je Kanbera";
+    pasus1.innerHTML = "Netačno &#10006; - Tačan odgovor je Kanbera";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -35,12 +35,12 @@ function pitanje1(){
 
 function pitanje2(){
   if(odg2.value.toLowerCase().trim() == "brazilija"){
-    pasus2.innerHTML = "To je tacno &#10004;";
+    pasus2.innerHTML = "To je tačno &#10004;";
     poeni ++;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus2.innerHTML = "Netacno &#10006; - Tacan odgovor je Brazilija";
+    pasus2.innerHTML = "Netačno &#10006; - Tačan odgovor je Brazilija";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -48,12 +48,12 @@ function pitanje2(){
 
 function pitanje3(){
   if(odg3.value.toLowerCase().trim() == "manila"){
-    pasus3.innerHTML = "To je tacno &#10004;";
+    pasus3.innerHTML = "To je tačno &#10004;";
     poeni ++;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus3.innerHTML = "Netacno &#10006; - Tacan odgovor je Manila";
+    pasus3.innerHTML = "Netačno &#10006; - Tačan odgovor je Manila";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -72,7 +72,15 @@ function pitanje3(){
 }
 
 function komentar(){
-    poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
+  if(poeni == 1){
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
+  }
+  else if(poeni == -1){
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
+  }
+  else {
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poena";
+  }
     poeni = 0;
 }
 

@@ -14,12 +14,12 @@ const reset = document.getElementById("reset");
 
 function pitanje1(){
   if(odg1.value.toLowerCase().trim() == "velika morava"){
-    pasus1.innerHTML = "To je tacno &#10004;";
+    pasus1.innerHTML = "To je tačno &#10004;";
     poeni ++;
    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus1.innerHTML = "To je netacno &#10006;";
+    pasus1.innerHTML = "To je netačno &#10006;";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -27,24 +27,40 @@ function pitanje1(){
 
 function pitanje2(){
   if(odg2.value.toLowerCase().trim() == "atlantski"){
-    pasus2.innerHTML = "To je tacno &#10004;";
+    pasus2.innerHTML = "To je tačno &#10004;";
     poeni ++;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else if(odg2.value.toLowerCase().trim() == "atlantski okean") {
-      pasus2.innerHTML = "To je tacno &#10004;";
+      pasus2.innerHTML = "To je tačno &#10004;";
       poeni ++;
   }
   else if(odg2.value.toLowerCase().trim() == "u atlantski okean") {
-      pasus2.innerHTML = "To je tacno &#10004;";
+      pasus2.innerHTML = "To je tačno &#10004;";
       poeni ++;
   }
   else if(odg2.value.toLowerCase().trim() == "u atlantski") {
-      pasus2.innerHTML = "To je tacno &#10004;";
+      pasus2.innerHTML = "To je tačno &#10004;";
+      poeni ++;
+  }
+  else if(odg2.value.toLowerCase().trim() == "u atlantskom") {
+      pasus2.innerHTML = "To je tačno &#10004; ali nije gramatički ispravno";
+      poeni ++;
+  }
+  else if(odg2.value.toLowerCase().trim() == "u atlantskom okeanu") {
+      pasus2.innerHTML = "To je tačno &#10004; ali nije gramatički ispravno";
+      poeni ++;
+  }
+  else if(odg2.value.toLowerCase().trim() == "atlantskom okeanu") {
+      pasus2.innerHTML = "To je tačno &#10004; ali nije gramatički ispravno";
+      poeni ++;
+  }
+  else if(odg2.value.toLowerCase().trim() == "atlantskom") {
+      pasus2.innerHTML = "To je tačno &#10004; ali nije gramatički ispravno";
       poeni ++;
   }
   else {
-    pasus2.innerHTML = "To je netacno &#10006;";
+    pasus2.innerHTML = "To je netačno &#10006;";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -52,24 +68,28 @@ function pitanje2(){
 
 function pitanje3(){
   if(odg3.value.toLowerCase().trim() == "pirinejsko"){
-    pasus3.innerHTML = "To je tacno &#10004;";
+    pasus3.innerHTML = "To je tačno &#10004;";
     poeni ++;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else if(odg3.value.toLowerCase().trim() == "pirinejsko poluostrvo"){
-    pasus3.innerHTML = "To je tacno &#10004;";
+    pasus3.innerHTML = "To je tačno &#10004;";
     poeni ++;
   }
   else if(odg3.value.toLowerCase().trim() == "na pirinejskom poluostrvu"){
-    pasus3.innerHTML = "To je tacno &#10004;";
+    pasus3.innerHTML = "To je tačno &#10004;";
     poeni ++;
   }
   else if(odg3.value.toLowerCase().trim() == "na pirinejskom"){
-    pasus3.innerHTML = "To je tacno &#10004;";
+    pasus3.innerHTML = "To je tačno &#10004;";
+    poeni ++;
+  }
+  else if(odg3.value.toLowerCase().trim() == "pirinejskom"){
+    pasus3.innerHTML = "To je tačno &#10004;";
     poeni ++;
   }
   else {
-    pasus3.innerHTML = "To je netacno &#10006;";
+    pasus3.innerHTML = "To je netačno &#10006;";
     poeni --;
     //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
@@ -88,7 +108,15 @@ function pitanje3(){
 }
 
 function komentar(){
-    poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
+  if(poeni == 1){
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
+  }
+  else if(poeni == -1){
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
+  }
+  else {
+    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poena";
+  }
     poeni = 0;
 }
 
