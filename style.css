@@ -1,7 +1,11 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background: -webkit-linear-gradient(darkgray, lightgray);
+  background-image: url("mapapozadina.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 .container {
   margin: 2% 7%;
@@ -13,7 +17,7 @@ body {
 }
 .kviz {
   /*background: -webkit-linear-gradient(#BEEB9F, #FFFF9D);*/
-  background: gray;
+  background: -webkit-linear-gradient(left, gray, darkgray);
   color: white;
   margin-bottom: 100px;
 }
@@ -31,6 +35,14 @@ button:hover {
   color: white;
   background: -webkit-linear-gradient(darkgreen, lightgreen);
   cursor: pointer;
+}
+#reset:hover {
+  color: white;
+  background: -webkit-linear-gradient(darkred, red);
+  cursor: pointer;
+}
+footer {
+  color: white;
 }
   @media (min-width: 748px) {
 .kviz {
@@ -52,9 +64,12 @@ input {
 .uputstvo {
   width: 40%;
   padding: 2%;
-  border: 2px solid green;
+  border: 2px solid black;
 }
 .kviz h1, button {
   margin-left: 1%;
+}
+footer {
+  text-align: center;
 }
 }
