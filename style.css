@@ -17,7 +17,7 @@ body {
 }
 .kviz {
   /*background: -webkit-linear-gradient(#BEEB9F, #FFFF9D);*/
-  background: -webkit-linear-gradient(left, gray, darkgray);
+  background: linear-gradient(left, gray, darkgray);
   color: white;
   margin-bottom: 100px;
 }
@@ -28,12 +28,12 @@ input {
 button {
   padding: 1%;
   color: black;
-  background: -webkit-linear-gradient(lightgray, darkgray);
+  background: linear-gradient(lightgray, darkgray);
 
 }
 button:hover {
   color: white;
-  background: -webkit-linear-gradient(darkgreen, lightgreen);
+  background: linear-gradient(darkgreen, lightgreen);
   cursor: pointer;
 }
 a {
@@ -51,7 +51,7 @@ a:hover {
 }
 #reset:hover {
   color: white;
-  background: -webkit-linear-gradient(darkred, red);
+  background: linear-gradient(darkred, red);
   cursor: pointer;
 }
 footer {
