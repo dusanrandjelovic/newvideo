@@ -17,7 +17,7 @@ body {
 }
 .kviz {
   /*background: -webkit-linear-gradient(#BEEB9F, #FFFF9D);*/
-  background: linear-gradient(left, gray, darkgray);
+  background: linear-gradient(to left, gray, darkgray);
   color: white;
   margin-bottom: 100px;
 }
