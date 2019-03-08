@@ -1,106 +1,265 @@
-let poeni = 0
-
-const koment1 = document.getElementById("odg1")
-const pasus1 = document.getElementById("pasus1")
-const koment2 = document.getElementById("odg2")
-const pasus2 = document.getElementById("pasus2")
-const koment3 = document.getElementById("odg3")
-const pasus3 = document.getElementById("pasus3")
-const koment4 = document.getElementById("odg4")
-const pasus4 = document.getElementById("pasus4")
-const dugme = document.getElementById("dugme");
-const reset = document.getElementById("reset");
-
-/*const novap = document.getElementById("novapitanja");
-
-const prvop = document.getElementById("prvopitanje")
-const zamenaprvog = document.getElementById("zamenaprvog")
-
-const koment4 = document.getElementById("odg4")
-const pasus4 = document.getElementById("pasus4")*/
+const odgovor1 = document.getElementById("odg1");
+const odgovor2 = document.getElementById("odg2");
+const odgovor3 = document.getElementById("odg3");
+const odgovor4 = document.getElementById("odg4");
+const odgovor5 = document.getElementById("odg5");
+const odgovor6 = document.getElementById("odg6");
+const odgovor7 = document.getElementById("odg7");
+const odgovor8 = document.getElementById("odg8");
+const odgovor9 = document.getElementById("odg9");
+const odgovor10 = document.getElementById("odg10");
 
 
-function pitanje1(){
-  if(odg1.value.toLowerCase().trim() == "kanbera"){
-    pasus1.innerHTML = "To je tačno &#10004;";
+const resenje1 = document.getElementById("resenje1");
+const resenje2 = document.getElementById("resenje2");
+const resenje3 = document.getElementById("resenje3");
+const resenje4 = document.getElementById("resenje4");
+const resenje5 = document.getElementById("resenje5");
+const resenje6 = document.getElementById("resenje6");
+const resenje7 = document.getElementById("resenje7");
+const resenje8 = document.getElementById("resenje8");
+const resenje9 = document.getElementById("resenje9");
+const resenje10 = document.getElementById("resenje10");
+
+const gledanje = document.getElementById("gledanje");
+const resetovanje = document.getElementById("resetovanje");
+const novikviz = document.getElementById("novikviz");
+
+let poeni = 0;
+
+function prvo(){
+  if(odg1.value.toLowerCase().trim() == "moskva"){
+    resenje1.innerHTML = "Bravo! &#10004;";
+    resenje1.classList.add("zelena");
+    resenje1.classList.remove("crvena");
+    odg1.style.display = "none";
     poeni ++;
-   //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus1.innerHTML = "Netačno &#10006; - Tačan odgovor je Kanbera";
+    resenje1.innerHTML = "&#10006; - Tačan odgovor je Moskva";
+    resenje1.classList.add("crvena");
+      resenje1.classList.remove("zelena");
+    odg1.style.display = "none";
     poeni --;
-    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
 }
 
-function pitanje2(){
-  if(odg2.value.toLowerCase().trim() == "brazilija"){
-    pasus2.innerHTML = "To je tačno &#10004;";
+function drugo(){
+  if(odg2.value.toLowerCase().trim() == "baku"){
+    resenje2.innerHTML = "Bravo! &#10004;";
+    resenje2.classList.add("zelena");
+    resenje2.classList.remove("crvena");
+    odg2.style.display = "none";
     poeni ++;
-    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus2.innerHTML = "Netačno &#10006; - Tačan odgovor je Brazilija";
+    resenje2.innerHTML = "&#10006; - Tačan odgovor je Baku";
+    resenje2.classList.add("crvena");
+      resenje2.classList.remove("zelena");
+    odg2.style.display = "none";
     poeni --;
-    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
 }
 
-function pitanje3(){
-  if(odg3.value.toLowerCase().trim() == "manila"){
-    pasus3.innerHTML = "To je tačno &#10004;";
+function trece(){
+  if(odg3.value.toLowerCase().trim() == "bejrut"){
+    resenje3.innerHTML = "Bravo! &#10004;";
+    resenje3.classList.add("zelena");
+    resenje3.classList.remove("crvena");
+    odg3.style.display = "none";
     poeni ++;
-    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
   else {
-    pasus3.innerHTML = "Netačno &#10006; - Tačan odgovor je Manila";
+    resenje3.innerHTML = "&#10006; - Tačan odgovor je Bejrut";
+    resenje3.classList.add("crvena");
+      resenje3.classList.remove("zelena");
+    odg3.style.display = "none";
     poeni --;
-    //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
   }
-
-  /*function pitanje4(){
-    if(odg4.value.toLowerCase().trim() == "googl"){
-      pasus4.innerHTML = "To je tacno &copy;";
-      poeni ++;
-      //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
-    }
-    else {
-      pasus4.innerHTML = "To je netacno &copy;";
-      poeni --;
-      //poeniprostor.innerHTML = "Ukupan broj bodova je: " + poeni;
-    }*/
 }
 
-function komentar(){
+function cetvrto(){
+  if(odg4.value.toLowerCase().trim() == "manila"){
+    resenje4.innerHTML = "Bravo! &#10004;";
+    resenje4.classList.add("zelena");
+    resenje4.classList.remove("crvena");
+    odg4.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje4.innerHTML = "&#10006; - Tačan odgovor je Manila";
+    resenje4.classList.add("crvena");
+      resenje4.classList.remove("zelena");
+    odg4.style.display = "none";
+    poeni --;
+  }
+}
+
+function peto(){
+  if(odg5.value.toLowerCase().trim() == "karakas"){
+    resenje5.innerHTML = "Bravo! &#10004;";
+    resenje5.classList.add("zelena");
+    resenje5.classList.remove("crvena");
+    odg5.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje5.innerHTML = "&#10006; - Tačan odgovor je Karakas";
+    resenje5.classList.add("crvena");
+      resenje5.classList.remove("zelena");
+    odg5.style.display = "none";
+    poeni --;
+  }
+}
+
+function sesto(){
+  if(odg6.value.toLowerCase().trim() == "madrid"){
+    resenje6.innerHTML = "Bravo! &#10004;";
+    resenje6.classList.add("zelena");
+    resenje6.classList.remove("crvena");
+    odg6.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje6.innerHTML = "&#10006; - Tačan odgovor je Madrid";
+    resenje6.classList.add("crvena");
+      resenje6.classList.remove("zelena");
+    odg6.style.display = "none";
+    poeni --;
+  }
+}
+
+function sedmo(){
+  if(odg7.value.toLowerCase().trim() == "brisel"){
+    resenje7.innerHTML = "Bravo! &#10004;";
+    resenje7.classList.add("zelena");
+    resenje7.classList.remove("crvena");
+    odg7.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje7.innerHTML = "&#10006; - Tačan odgovor je Brisel";
+    resenje7.classList.add("crvena");
+      resenje7.classList.remove("zelena");
+    odg7.style.display = "none";
+    poeni --;
+  }
+}
+
+function osmo(){
+  if(odg8.value.toLowerCase().trim() == "dakar"){
+    resenje8.innerHTML = "Bravo! &#10004;";
+    resenje8.classList.add("zelena");
+    resenje8.classList.remove("crvena");
+    odg8.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje8.innerHTML = "&#10006; - Tačan odgovor je Dakar";
+    resenje8.classList.add("crvena");
+      resenje8.classList.remove("zelena");
+    odg8.style.display = "none";
+    poeni --;
+  }
+}
+
+function deveto(){
+  if(odg9.value.toLowerCase().trim() == "alžir"){
+    resenje9.innerHTML = "Bravo! &#10004;";
+    resenje9.classList.add("zelena");
+    resenje9.classList.remove("crvena");
+    odg9.style.display = "none";
+    poeni ++;
+  }
+else if (odg9.value.toLowerCase().trim() == "alzir"){
+  resenje9.innerHTML = "Bravo! &#10004;";
+  resenje9.classList.add("zelena");
+  resenje9.classList.remove("crvena");
+  odg9.style.display = "none";
+  poeni ++;
+}
+  else {
+    resenje9.innerHTML = "&#10006; - Tačan odgovor je Alžir";
+    resenje9.classList.add("crvena");
+      resenje9.classList.remove("zelena");
+    odg9.style.display = "none";
+    poeni --;
+  }
+}
+
+function deseto(){
+  if(odg10.value.toLowerCase().trim() == "kanbera"){
+    resenje10.innerHTML = "Bravo! &#10004;";
+    resenje10.classList.add("zelena");
+    resenje10.classList.remove("crvena");
+    odg10.style.display = "none";
+    poeni ++;
+  }
+  else {
+    resenje10.innerHTML = "&#10006; - Tačan odgovor je Kanbera";
+    resenje10.classList.add("crvena");
+      resenje10.classList.remove("zelena");
+    odg10.style.display = "none";
+    poeni --;
+  }
+}
+
+function ukupno(){
   if(poeni == 1){
-    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
-  }
-  else if(poeni == -1){
-    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poen";
-  }
-  else {
-    poeniprostor.innerHTML = "Rezultat je: " + poeni + " poena";
-  }
-    poeni = 0;
+  poeniprostor.innerHTML = "Osvojili ste: " + poeni + " poen.";
+}
+else if (poeni == -1){
+    poeniprostor.innerHTML = "Osvojili ste: " + poeni + " poen.";
+}
+else {
+    poeniprostor.innerHTML = "Osvojili ste: " + poeni + " poena.";
+}
+  poeni = 0;
 }
 
-function brisanje() {
-   pasus1.innerHTML = " ";
-   pasus2.innerHTML = " ";
-   pasus3.innerHTML = " ";
-   poeniprostor.innerHTML = " ";
-   odg1.value = " ";
-   odg2.value = " ";
-   odg3.value = " ";
+function brisanje(){
+  odg1.style.display = "block";
+  odg1.value = "";
+  resenje1.innerHTML = "";
+  odg2.style.display = "block";
+  odg2.value = "";
+  resenje2.innerHTML = "";
+  odg3.style.display = "block";
+  odg3.value = "";
+  resenje3.innerHTML = "";
+  odg4.style.display = "block";
+  odg4.value = "";
+  resenje4.innerHTML = "";
+  odg5.style.display = "block";
+  odg5.value = "";
+  resenje5.innerHTML = "";
+  odg6.style.display = "block";
+  odg6.value = "";
+  resenje6.innerHTML = "";
+  odg7.style.display = "block";
+  odg7.value = "";
+  resenje7.innerHTML = "";
+  odg8.style.display = "block";
+  odg8.value = "";
+  resenje8.innerHTML = "";
+  odg9.style.display = "block";
+  odg9.value = "";
+  resenje9.innerHTML = "";
+  odg10.style.display = "block";
+  odg10.value = "";
+  resenje10.innerHTML = "";
+  poeniprostor.innerHTML = "";
 }
 
-/*function izmena(){
-  prvopitanje.style.display = "none";
-  zamenaprvog.style.display = "block";
-}*/
-
-dugme.addEventListener("click", pitanje1);
-dugme.addEventListener("click", pitanje2);
-dugme.addEventListener("click", pitanje3);
-dugme.addEventListener("click", komentar);
-reset.addEventListener("click", brisanje);
+gledanje.addEventListener("click", prvo);
+gledanje.addEventListener("click", drugo);
+gledanje.addEventListener("click", trece);
+gledanje.addEventListener("click", cetvrto);
+gledanje.addEventListener("click", peto);
+gledanje.addEventListener("click", sesto);
+gledanje.addEventListener("click", sedmo);
+gledanje.addEventListener("click", osmo);
+gledanje.addEventListener("click", deveto);
+gledanje.addEventListener("click", deseto);
+gledanje.addEventListener("click", ukupno);
+resetovanje.addEventListener("click", brisanje);

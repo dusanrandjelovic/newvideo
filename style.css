@@ -17,7 +17,7 @@ body {
 }
 .kviz {
   /*background: -webkit-linear-gradient(#BEEB9F, #FFFF9D);*/
-  background: linear-gradient(to left, gray, darkgray);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("belocrnapoz.jpg");
   color: white;
   margin-bottom: 100px;
 }
@@ -49,7 +49,7 @@ a:hover {
   color: white;
   border: 1px solid white;
 }
-#reset:hover {
+#resetovanje:hover {
   color: white;
   background: linear-gradient(darkred, red);
   cursor: pointer;
@@ -78,6 +78,7 @@ input {
   width: 40%;
   padding: 2%;
   border: 2px solid black;
+  height: 40%;
 }
 .kviz h1, button {
   margin-left: 1%;

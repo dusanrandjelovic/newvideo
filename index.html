@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-  <title>Kviz</title>
+  <title>Kviz I</title>
   <meta name="description" content="kviz geografija">
   <meta name="keywords" content="kviz geografija pitanja">
   <meta name="author" content="Dusan Randjelovic | dusanrandjelovic92@gmail.com">
@@ -9,25 +9,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
+<style>
+.zelena {
+  color: green;
+}
+.crvena {
+  color: red;
+}
+</style>
   </head>
   <body>
 
 <div class="kviz container">
-  <h1>Kviz</h1>
+  <h1>Kviz I</h1>
   <div class="flex">
 
  <div class="pitanje">
-  <h3>1. Kako se zove glavni grad Australije?</h3>
-  <input id="odg1" >
-  <p id="pasus1"></p>
+    <h4 id="pit1">1. Kako se zove glavni grad Rusije?</h4>
+    <input id="odg1">
+    <p id="resenje1"></p>
 
- <h3>2. Kako se zove glavni grad Brazila?</h3>
- <input id="odg2">
- <p id="pasus2"></p>
+    <h4 id="pit2">2. Kako se zove glavni grad Azerbejdžana?</h4>
+    <input id="odg2">
+    <p id="resenje2"></p>
 
-<h3>3. Kako se zove glavni grad Filipina?</h3>
-<input id="odg3">
-<p id="pasus3"></p>
+    <h4 id="pit3">3. Koji je glavni grad Libana?</h4>
+    <input id="odg3">
+    <p id="resenje3"></p>
+
+    <h4 id="pit4">4. Kako se glavni grad Filipina?</h4>
+    <input id="odg4">
+    <p id="resenje4"></p>
+
+    <h4 id="pit5">5. Glavni grad Venecuele?</h4>
+    <input id="odg5">
+    <p id="resenje5"></p>
+
+
+    <h4>6. Kako se zove glavni grad Španije?</h4>
+    <input id="odg6">
+    <p id="resenje6"></p>
+
+    <h4>7. Kako se zove glavni grad Belgije?</h4>
+    <input id="odg7">
+    <p id="resenje7"></p>
+
+    <h4>8. Koji je glavni grad Senegala?</h4>
+    <input id="odg8">
+    <p id="resenje8"></p>
+
+    <h4>9. Kako se glavni grad Alžira?</h4>
+    <input id="odg9">
+    <p id="resenje9"></p>
+
+    <h4>10. Glavni grad Australije?</h4>
+    <input id="odg10">
+    <p id="resenje10"></p>
+
 </div>
 
 <div class="uputstvo">
@@ -38,12 +76,10 @@ Tačni odgovori donose jedan poen, dok netačni odgovori donose negativan poen. 
 </div>
 
 </div>
-<!--  <h3>4. Kako se zove najpoznatiji pretrazivac?</h3>
-<input id="odg4" style="padding: 2%">
-<h3 id="pasus4"></h3>-->
 
-<button id="dugme">Pogledaj broj poena</button>
-<button id="reset">Reset</button>
+
+<button id="gledanje">Pogledaj broj poena</button>
+<button id="resetovanje">Reset</button>
 <a href="index2.html">Novi kviz &#8594;</a>
 <p id="poeniprostor"></p>
 
